@@ -1,0 +1,14 @@
+[
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-exact.json"],"exit":0},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-prefix.json"],"exit":0},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-restore.json"],"exit":0},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-restore.json","--require-exact"],"exit":1},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-exact.json","--require-exact"],"exit":0},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-miss.json"],"exit":1},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-later-scope.json"],"exit":0},
+  {"args":["cache_restore_explain.py","examples/inventory-empty.json","examples/request-exact.json"],"exit":1},
+  {"args":["cache_restore_explain.py","examples/inventory-incomplete.json","examples/request-exact.json"],"exit":2},
+  {"args":["cache_restore_explain.py","examples/inventory-invalid-id.json","examples/request-exact.json"],"exit":2},
+  {"args":["cache_restore_explain.py","examples/inventory.json","examples/request-unsupported.json"],"exit":2},
+  {"args":["cache_restore_explain.py","--help"],"exit":0}
+]
